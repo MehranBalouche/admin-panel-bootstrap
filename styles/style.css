@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "nunito";
+  src: url(./fonts/Nunito.ttf);
+}
+body {
+  background-color: #f2f7ff;
+  font-family: "nunito", sans-serif;
+}
+/* ---------------------- color ----------------------- */
+.bg-purple {
+  background-color: #9694ff;
+}
+.bg-skyblue {
+  background-color: #57caeb;
+}
+.bg-lightcoral {
+  background-color: #ff7976;
+}
+.bg-lightgreen {
+  background-color: #5ddab4;
+}
+/* -------------------- Define static classes --------------------- */
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-muted-custom {
+  opacity: 1;
+  color: #7c8db5 !important;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+li{
+  list-style: none !important;
+}
+.text-deepblue{
+  color: #25396f;
+}
+/* ------------------rewright bootstarp class--------------------- */
+.form-check-input:focus,
+.form-check-input:focus-visible {
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.form-check-input:checked {
+  background-color: #435ebe !important;
+  border-color: #435ebe !important;
+}
+/* ----------------- custom styles ----------------- */
+.app {
+  position: relative;
+}
+/* ****************** sidebar styles part ****************** */
+.sidebar {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 2rem;
+  z-index: 99;
+  overflow-y: scroll;
+}
+/* ===== Scrollbars ===== */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+
+/* ===== Scrollbars ===== */
+
+.sidemenu-close-btn {
+  display: none;
+}
+.sidemenu-close-btn svg {
+  width: 28px;
+  height: 28px;
+  color: #25396f;
+}
+.sidemenu-close-btn svg:hover {
+  width: 28px;
+  height: 28px;
+  color: #364b98;
+}
+.sidebar-logo-icon {
+  width: 80px;
+}
+.sidebar-menu-topic {
+  padding: 0 1rem;
+  margin: 1.5rem 0 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #25396f;
+  text-transform: capitalize;
+}
+.sidebar-menu-title {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #25396f;
+  text-transform: capitalize;
+  border-radius: 0.7rem;
+}
+.sidebar-menu-title > a{
+  position: relative;
+  display: block;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  color: #25396f;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 0.7rem;
+}
+.sidebar-menu-title a:hover:not(.menu-active){
+  background-color: #f0f1f5;
+}
+.sidebar-menu-title i{
+  color: #7c8db5;
+  margin-right: 3px;
+}
+.sidebar-menu-title .menu-active{
+  background-color: #435ebe;
+  color: #f0f1f5;
+}
+.menu-active a{
+  color: #fff;
+}
+.slider-submenus{
+  background-color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+  }
+  .sidemenu-close-btn {
+    display: contents;
+    background: transparent;
+  }
+}
+/* ****************** msain styles part ****************** */
+.main {
+  padding: 2rem;
+  width: 80%;
+  margin-left: 300px;
+}
+.sidemenu-open-btn {
+  display: none;
+  background: transparent;
+  border: 0;
+}
+.sidemenu-open-btn svg {
+  width: 36px;
+  height: 36px;
+  color: #25396f;
+}
+.main-text-topic {
+  color: #25396f;
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .sidemenu-open-btn {
+    display: block;
+    background: transparent;
+    border: 0;
+  }
+}
+/* status-cards */
+.stats-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.main-card-profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  color: #25396f;
+}
+
+/* ---------- footer --------------- */
+.footer-contents{
+  color: #7c8db5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
