@@ -38,6 +38,20 @@ li{
 .text-deepblue{
   color: #25396f;
 }
+.btn-close-white {
+  color: #fff;
+  background: transparent;
+  background-image: url("./../images/btn-close-white.svg");
+  box-sizing: content-box;
+  width: 0.7em;
+  height: 0.7em;
+  padding: 0.25em 0.25em;
+  border: 0;
+  border-radius: .375rem;
+}
+.modal .modal-full {
+  max-width: 94%;
+}
 /* ------------------rewright bootstarp class--------------------- */
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
@@ -64,6 +78,18 @@ a:hover {
   color: #fff !important;
   background-color: #435ebe !important;
   border-color: #435ebe !important;
+}
+.btn-outline-primary {
+  color: #435ebe !important;
+  border-color: #435ebe !important;
+}
+.btn.btn-light-secondary {
+  background-color: #e6eaee !important;
+  color: #181e24 !important;
+}
+.btn-outline-primary:hover {
+  background-color: #435ebe !important;
+  color: #fff !important;
 }
 .btn.btn-light-primary {
   background-color: #ebf3ff;
@@ -193,6 +219,35 @@ a:hover {
 }
 .card-link{
   text-decoration: none;
+}
+
+.nav-tabs .nav-link.active {
+  border: none;
+  position: relative;
+  color: #435ebe;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+  text-shadow: 0 0 2px rgba(67,94,190,.3);
+}
+.nav-tabs .nav-link.active:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #435ebe;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(67,94,190,.5);
+}
+.nav-pills .nav-link.active {
+  box-shadow: 0 2px 10px rgba(67,94,190,.5);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #435ebe;
 }
 /* ----------------- custom styles ----------------- */
 .app {
