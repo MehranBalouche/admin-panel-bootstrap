@@ -30,3 +30,10 @@ for (a = 0; a < sliderSeSubmenusHandller.length; a++) {
     } 
   });
 }
+
+// live Toast 
+let liveToastbtnElem = document.getElementById('liveToastbtn')
+let liveToastElem = document.getElementById('liveToast')
+liveToastbtnElem.addEventListener('click',function() {
+    liveToastElem.classList.add('show')
+})
